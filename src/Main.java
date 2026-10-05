@@ -72,7 +72,7 @@ public class Main {
 
             curr_index_letter = alphabet.indexOf(letter);
             if (letter != ' ') {
-                encrypted_text = encrypted_text + alphabet.charAt((curr_index_letter + key > alphabet.length()) ?
+                encrypted_text = encrypted_text + alphabet.charAt((curr_index_letter + key < alphabet.length()) ?
                         curr_index_letter + key - alphabet.length():
                         curr_index_letter + key);
             }else{
